@@ -9,7 +9,7 @@ import FDM
 import HTM
 import math
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client_socket.connect(('192.168.1.6', 2501))
+client_socket.connect(('ipaddress', 2501))
 connection = client_socket.makefile('wb')
 
 cam = cv2.VideoCapture(0)
